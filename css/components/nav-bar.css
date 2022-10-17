@@ -1,0 +1,43 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(31, 31, 61, 0.8);
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border-top: 1px solid var(--border-color);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.nav__notification {
+  position: absolute;
+  top: -20px;
+  right: -7px;
+}
+.nav__more {
+  position: absolute;
+  top: -20px;
+  right: -7px;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.nav__btn:nth-child(2):hover .nav__notification {
+  animation: notificationAnimation 2s ease-in-out infinite;
+}

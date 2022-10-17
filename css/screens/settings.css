@@ -1,0 +1,52 @@
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.settings__setting {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__columns {
+  display: flex;
+  align-items: center;
+}
+.settings__columns:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.settings__columns i {
+  width: 60px;
+  font-size: 25px;
+}
+.settings_columns:last-child {
+  color: rgba(0,0,0,0.5)
+}
+
+.user-component__profile {
+  background-color: rgba(0,0,0,0.1);
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.user-component__column__profile:hover {
+  transform: scale(1.1);
+}
+.user-component .fa-pencil-alt {
+  position: absolute;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 50%;
+  left: 62px;
+  top: 165px;
+  cursor: pointer;
+}
+.user-component .fa-pencil-alt:hover {
+  transform: scale(1.1)
+}
